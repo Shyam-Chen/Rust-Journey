@@ -89,12 +89,17 @@ Problems:
 [724]: ./src/724.%20Find%20Pivot%20Index/pivot_index.rs
 [724-explanation]: ./src/724.%20Find%20Pivot%20Index/README.md
 
-| Hash Map / Set                           |          |        |      |
-| ---------------------------------------- | -------- | ------ | ---- |
-| 2215. Find the Difference of Two Arrays  | Solution | Easy   | 詳解 |
-| 1207. Unique Number of Occurrences       | Solution | Easy   | 詳解 |
-| 1657. Determine if Two Strings Are Close | Solution | Medium | 詳解 |
-| 2352. Equal Row and Column Pairs         | Solution | Medium | 詳解 |
+<a name="hash-map--set"></a>
+
+| Hash Map / Set                           |                  |        |                          |
+| ---------------------------------------- | ---------------- | ------ | ------------------------ |
+| 2215. Find the Difference of Two Arrays  | [Solution][2215] | Easy   | [詳解][2215-explanation] |
+| 1207. Unique Number of Occurrences       | Solution         | Easy   | 詳解                     |
+| 1657. Determine if Two Strings Are Close | Solution         | Medium | 詳解                     |
+| 2352. Equal Row and Column Pairs         | Solution         | Medium | 詳解                     |
+
+[2215]: ./src/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/find_difference.rs
+[2215-explanation]: ./src/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/README.md
 
 | Stack                              |          |        |      |
 | ---------------------------------- | -------- | ------ | ---- |

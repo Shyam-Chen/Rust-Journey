@@ -68,3 +68,6 @@ mod _1732_largest_altitude;
 
 #[path = "./1768. Merge Strings Alternately/merge_alternately.rs"]
 mod _1768_merge_alternately;
+
+#[path = "./2215. Find the Difference of Two Arrays/find_difference.rs"]
+mod _2215_find_difference;

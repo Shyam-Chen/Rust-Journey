@@ -52,7 +52,7 @@
   - [雙指標 (Two Pointers)](./algorithms/Basic.md#two-pointers)
   - [滑動視窗 (Sliding Window)](./algorithms/Basic.md#sliding-window)
   - [前綴和 (Prefix Sum)](./algorithms/Basic.md#prefix-sum)
-  - 雜湊映射 / 集合 (Hash Map / Set)
+  - [雜湊映射 / 集合 (Hash Map / Set)](./algorithms/Basic.md#hash-map--set)
   - 堆疊 (Stack)
   - 佇列 (Queue)
   - 鏈結串列 (Linked List)
