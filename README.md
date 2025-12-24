@@ -250,7 +250,7 @@ Axum + GraphQL Template
 Raspberry Pi
 
 - Blinky LED
-  - 單板電腦 (Raspberry Pi 5 Model B) + `gpio-cdev`
+  - 單板電腦 (Raspberry Pi 5 Model B, 16GB RAM, 128GB Storage) + `gpio-cdev`
 - 感測器 (Raspberry Pi Sense HAT)
 - 音頻 (Raspberry Pi DigiAMP+)
   - 揚聲器 (Visaton FR 10 - 4 OHM)
@@ -258,16 +258,17 @@ Raspberry Pi
 - 觸控螢幕 (Raspberry Pi Touch Display 2) + `tauri` + `leptos`
 - 微控制器 (Raspberry Pi Pico 2) + `embassy-rp`
 - 感測器套件 (Yahboom Sensor Kit)
+- GUI + `embedded-graphics`
 - UART 串列通訊 + `serialport`
-- GUI + `slint`
+- MQTT 通訊協定 + `rumqttc`
+  - 無線 Wireless + 微控制器 (Raspberry Pi Pico 2 W)
 - 機械手臂 (RiceLee Robot Arm Kit for Raspberry Pi)
 - Jetson
   - Jetson Orin Nano (8GB)
 - STM32 + `embassy-stm32`
   - STM32F407(VG)
-- Ollama
+- Ollama 模型部署
 - AI 模型推理 + `candle-*`
-- MQTT 通訊協定 + `rumqttc`
 - NFC Module 讀寫卡模組 PN532
 - Digi-Key 電子元件 (Electronic Components)
 
