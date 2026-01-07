@@ -208,11 +208,13 @@ Axum
 - 訊息佇列 (Message Queues) + `rdkafka`
 - 同構 (Isomorphic) + `leptos`
 - 人工智慧代理 (AI Agents)
-  - Gemini (DeepMind) / ChatGPT (OpenAI) / Claude (Anthropic) + Qdrant
-    - `swiftide-*` + stream + `leptos`
+  - Gemini (DeepMind) / ChatGPT (OpenAI) / Claude (Anthropic)
+    - Insomnia App
+    - `leptos` + `swiftide-*` + stream
+    - `qdrant-client` + Qdrant
     - Chat Memory
     - Tool Calling Agents
-  - `candle-*` + Hugging Face + `qdrant-client` + Qdrant
+  - Ollama
 - 提供服務使用 GraphQL (`async-graphql`)
 - Email + `lettre`
   - Email Builder + `mrml` + MJML
@@ -268,7 +270,8 @@ Raspberry Pi
 - STM32 + `embassy-stm32`
   - STM32F407(VG)
 - Ollama 模型部署
-- AI 模型推理 + `candle-*`
+  - jetson-containers
+  - k3s
 - NFC Module 讀寫卡模組 PN532
 - Digi-Key 電子元件 (Electronic Components)
 
