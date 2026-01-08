@@ -49,6 +49,27 @@ mod math;
 use math::{add, sub};
 ```
 
+## 預導模組 (Prelude)
+
+```rs
+// my_prelude.rs
+pub use std::collections::HashMap;
+pub use std::sync::Arc;
+```
+
+```rs
+// main.rs
+mod my_prelude;
+
+use my_prelude::*;
+
+fn main() {
+    let mut map: HashMap<String, i32> = HashMap::new();
+    map.insert("key".to_string(), 42);
+    println!("{map:?}");
+}
+```
+
 ## 模組樹
 
 ```sh

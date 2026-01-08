@@ -6,6 +6,7 @@
 
 ## 程式設計 (Programming)
 
+- [起手式 (Getting Started)](./programming/GettingStarted.md)
 - [變數 (Variables)](./programming/Variables.md)
 - [資料型別 (Data Types)](./programming/DataTypes.md)
 - [函式 (Functions)](./programming/Functions.md)
