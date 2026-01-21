@@ -126,6 +126,7 @@ Clap
 - [提示字元 (Prompts)](./command-line/CommandLine.md#提示字元-prompts)
 - [非同步 (Asynchronous)](./command-line/CommandLine.md#非同步-asynchronous)
 - [開箱 (Unboxing Crates)](./command-line/CommandLine.md#開箱-unboxing-crates)
+- Tree CLI
 
 Clap Template
 
@@ -216,10 +217,11 @@ Axum
     - Chat Memory
     - Tool Calling Agents
   - Ollama
-- 提供服務使用 GraphQL (`async-graphql`)
+- 提供服務使用 GraphQL (`async-graphql`, `async-graphql-axum`)
 - Email + `lettre`
   - Email Builder + `mrml` + MJML
 - 多語言支援與國際化 (Internationalization)
+- 內部自有服務通訊使用 gRPC (`tonic`)
 - 雲端服務部署
   - 容器化 + Docker
   - 部署到 Render + MongoDB Atlas + IDrive e2
