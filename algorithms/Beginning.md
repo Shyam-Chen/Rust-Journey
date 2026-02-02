@@ -1,6 +1,6 @@
 # Beginning - Data Structures and Algorithms
 
-## 陣列 (Array)
+## 陣列 (Array) / 字串 (String)
 
 訪問元素:
 
@@ -316,7 +316,7 @@ pub struct ListNode<T> {
 impl<T> ListNode<T> {
     #[inline]
     pub fn new(value: T) -> Self {
-        ListNode { value, next: None }
+        Self { value, next: None }
     }
 }
 ```
@@ -409,7 +409,7 @@ pub struct Stack<T> {
 
 impl<T> Stack<T> {
     pub fn new() -> Self {
-        Stack { items: Vec::new() }
+        Self { items: Vec::new() }
     }
 
     // 將元素加入堆疊
@@ -613,7 +613,7 @@ pub struct TreeNode<T> {
 impl<T> TreeNode<T> {
     #[inline]
     pub fn new(value: T) -> Self {
-        TreeNode {
+        Self {
             value,
             left: None,
             right: None,
@@ -648,7 +648,7 @@ fn main() {
 impl<T> TreeNode<T> {
     #[inline]
     pub fn new(value: T) -> Rc<RefCell<Self>> {
-        Rc::new(RefCell::new(TreeNode {
+        Rc::new(RefCell::new(Self {
             value,
             left: None,
             right: None,
@@ -709,7 +709,7 @@ pub struct TreeNode<T> {
 impl<T> TreeNode<T> {
     #[inline]
     pub fn new(value: T) -> Rc<RefCell<Self>> {
-        Rc::new(RefCell::new(TreeNode {
+        Rc::new(RefCell::new(Self {
             value,
             left: None,
             right: None,
@@ -816,7 +816,7 @@ pub struct TreeNode<T: Ord> {
 // 實作 TreeNode 的範例初始化方法
 impl<T: Ord> TreeNode<T> {
     pub fn new(value: T) -> Rc<RefCell<Self>> {
-        Rc::new(RefCell::new(TreeNode {
+        Rc::new(RefCell::new(Self {
             value,
             height: 1, // 初始高度設定為 1
             color: None,
@@ -942,7 +942,7 @@ struct Trie {
 
 impl Trie {
     fn new() -> Self {
-        Trie {
+        Self {
             root: TrieNode::new(),
         }
     }

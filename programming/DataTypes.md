@@ -194,6 +194,18 @@ fn main() {
 }
 ```
 
+附加：
+
+```rs
+fn main() {
+    let mut text = String::new();
+    text.push('A'); // A
+    text.push_str("BC"); // ABC
+    text += "DE"; // ABCDE
+    println!("{text}"); // ABCDE
+}
+```
+
 ## 陣列 (Arrays)
 
 ### 靜態陣列 (Arrays)

@@ -198,8 +198,6 @@ fn main() {
 
 #### 自動移轉給函式
 
-將一個非 Copy 類型（例如 Vec、String、Box 等）傳入函式時，會把所有權轉移（move）到該函式的參數上。
-
 ```rs
 fn push_four(mut numbers: Vec<i32>) -> Vec<i32> {
     numbers.push(4);

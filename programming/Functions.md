@@ -119,7 +119,7 @@ struct Counter {
 
 impl Counter {
     fn new() -> Self {
-        Counter { number: 0 }
+        Self { number: 0 }
     }
 
     fn inc(&mut self) {

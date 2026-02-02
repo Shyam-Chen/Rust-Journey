@@ -126,7 +126,8 @@ Clap
 - [提示字元 (Prompts)](./command-line/CommandLine.md#提示字元-prompts)
 - [非同步 (Asynchronous)](./command-line/CommandLine.md#非同步-asynchronous)
 - [開箱 (Unboxing Crates)](./command-line/CommandLine.md#開箱-unboxing-crates)
-- Tree CLI
+- Tree CLI - Recursively displays directories and files in a tree-like structure
+- Sheetplot CLI - Generates charts and visualizations directly from spreadsheet files
 
 Clap Template
 

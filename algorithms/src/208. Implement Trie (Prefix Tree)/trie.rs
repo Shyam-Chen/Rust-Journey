@@ -18,7 +18,7 @@ struct Trie {
 
 impl Trie {
     fn new() -> Self {
-        Trie {
+        Self {
             root: TrieNode::new(),
         }
     }
