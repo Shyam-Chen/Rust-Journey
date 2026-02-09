@@ -94,12 +94,14 @@ Problems:
 | Hash Map / Set                           |                  |        |                          |
 | ---------------------------------------- | ---------------- | ------ | ------------------------ |
 | 2215. Find the Difference of Two Arrays  | [Solution][2215] | Easy   | [詳解][2215-explanation] |
-| 1207. Unique Number of Occurrences       | Solution         | Easy   | 詳解                     |
+| 1207. Unique Number of Occurrences       | [Solution][1207] | Easy   | [詳解][1207-explanation] |
 | 1657. Determine if Two Strings Are Close | Solution         | Medium | 詳解                     |
 | 2352. Equal Row and Column Pairs         | Solution         | Medium | 詳解                     |
 
 [2215]: ./src/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/find_difference.rs
 [2215-explanation]: ./src/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/README.md
+[1207]: ./src/1207.%20Unique%20Number%20of%20Occurrences/unique_occurrences.rs
+[1207-explanation]: ./src/1207.%20Unique%20Number%20of%20Occurrences/README.md
 
 | Stack                              |          |        |      |
 | ---------------------------------- | -------- | ------ | ---- |

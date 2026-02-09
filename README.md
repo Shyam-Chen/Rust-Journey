@@ -210,7 +210,7 @@ Axum
 - [WebSocket 雙向通訊 (WebSocket Full-duplex Interaction)](./server/WebSocket.md)
 - 訊息佇列 (Message Queues) + `rdkafka`
 - 同構 (Isomorphic) + `leptos`
-- 人工智慧代理 (AI Agents)
+- 人工智慧代理 (AI Agents) + Rig `rig-core`
   - Gemini (DeepMind) / ChatGPT (OpenAI) / Claude (Anthropic)
     - Insomnia App
     - `leptos` + `swiftide-*` + stream

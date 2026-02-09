@@ -51,6 +51,9 @@ mod _1004_longest_ones;
 #[path = "./1071. Greatest Common Divisor of Strings/gcd_of_strings.rs"]
 mod _1071_gcd_of_strings;
 
+#[path = "./1207. Unique Number of Occurrences/unique_occurrences.rs"]
+mod _1207_unique_occurrences;
+
 #[path = "./1431. Kids With the Greatest Number of Candies/kids_with_candies.rs"]
 mod _1431_kids_with_candies;
 
