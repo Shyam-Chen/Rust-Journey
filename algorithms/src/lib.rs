@@ -45,6 +45,9 @@ mod _643_find_max_average;
 #[path = "./724. Find Pivot Index/pivot_index.rs"]
 mod _724_pivot_index;
 
+#[path = "./735. Asteroid Collision/asteroid_collision.rs"]
+mod _735_asteroid_collision;
+
 #[path = "./1004. Max Consecutive Ones III/longest_ones.rs"]
 mod _1004_longest_ones;
 
@@ -63,6 +66,9 @@ mod _1456_max_vowels;
 #[path = "./1493. Longest Subarray of 1's After Deleting One Element/longest_subarray.rs"]
 mod _1493_longest_subarray;
 
+#[path = "./1657. Determine if Two Strings Are Close/close_strings.rs"]
+mod _1657_close_strings;
+
 #[path = "./1679. Max Number of K-Sum Pairs/max_operations.rs"]
 mod _1679_max_operations;
 
@@ -74,3 +80,9 @@ mod _1768_merge_alternately;
 
 #[path = "./2215. Find the Difference of Two Arrays/find_difference.rs"]
 mod _2215_find_difference;
+
+#[path = "./2352. Equal Row and Column Pairs/equal_pairs.rs"]
+mod _2352_equal_pairs;
+
+#[path = "./2390. Removing Stars From a String/remove_stars.rs"]
+mod _2390_remove_stars;

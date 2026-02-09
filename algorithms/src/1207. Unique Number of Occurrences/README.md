@@ -1,4 +1,4 @@
-# 唯一的出現次數 (Unique Number of Occurrences)
+# 1207. 唯一的出現次數 (Unique Number of Occurrences)
 
 給定一個整數陣列 `arr`，如果陣列中每個值的出現次數都是**唯一的**，則回傳 `true`，否則回傳 `false`。
 
