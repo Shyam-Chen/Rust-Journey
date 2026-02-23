@@ -109,10 +109,13 @@ Problems:
 | 735. Asteroid Collision            | Solution | Medium | 詳解 |
 | 394. Decode String                 | Solution | Medium | 詳解 |
 
-| Queue                       |          |        |      |
-| --------------------------- | -------- | ------ | ---- |
-| 933. Number of Recent Calls | Solution | Easy   | 詳解 |
-| 649. Dota2 Senate           | Solution | Medium | 詳解 |
+| Queue                       |                 |        |                         |
+| --------------------------- | --------------- | ------ | ----------------------- |
+| 933. Number of Recent Calls | [Solution][933] | Easy   | [詳解][933-explanation] |
+| 649. Dota2 Senate           | Solution        | Medium | 詳解                    |
+
+[933]: ./src/933.%20Number%20of%20Recent%20Calls/recent_counter.rs
+[933-explanation]: ./src/933.%20Number%20of%20Recent%20Calls/README.md
 
 | Linked List                                   |          |        |      |
 | --------------------------------------------- | -------- | ------ | ---- |

@@ -33,6 +33,9 @@ mod _345_reverse_vowels;
 #[path = "./392. Is Subsequence/is_subsequence.rs"]
 mod _392_is_subsequence;
 
+#[path = "./394. Decode String/decode_string.rs"]
+mod _394_decode_string;
+
 #[path = "./443. String Compression/compress.rs"]
 mod _443_compress;
 
@@ -47,6 +50,9 @@ mod _724_pivot_index;
 
 #[path = "./735. Asteroid Collision/asteroid_collision.rs"]
 mod _735_asteroid_collision;
+
+#[path = "./933. Number of Recent Calls/recent_counter.rs"]
+mod _933_recent_counter;
 
 #[path = "./1004. Max Consecutive Ones III/longest_ones.rs"]
 mod _1004_longest_ones;

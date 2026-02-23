@@ -246,6 +246,8 @@ Axum
     - Google Kubernetes Engine
     - Azure Kubernetes Service
     - Amazon Elastic Kubernetes Service
+  - IaC
+    - Pulumi + Pulumi Gestalt
 - 本地部署 (輕量化) + Kubernetes K3s
   - Raspberry Pi 5 Model B
 
