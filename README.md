@@ -213,15 +213,19 @@ Axum
 - 人工智慧代理 (AI Agents) + Rig `rig-core`
   - Gemini (DeepMind) / ChatGPT (OpenAI) / Claude (Anthropic)
     - Insomnia App
-    - `leptos` + `swiftide-*` + stream
+    - `leptos` + stream
     - `qdrant-client` + Qdrant
     - Chat Memory
     - Tool Calling Agents
   - Ollama
+    - Large language model + `gemma3:4b`
+    - Embedding model + `embeddinggemma:300m`
 - 提供服務使用 GraphQL (`async-graphql`, `async-graphql-axum`)
 - Email + `lettre`
   - Email Builder + `mrml` + MJML
+  - Template Engine + `tera`
 - 多語言支援與國際化 (Internationalization)
+- 全系統搜尋使用 Elasticsearch (`elasticsearch`)
 - 內部自有服務通訊使用 gRPC (`tonic`)
 - 雲端服務部署
   - 容器化 + Docker
