@@ -54,8 +54,8 @@ fn main() {
 
     {
         let val = val * 2;
-        println!("在內部作用域的值為：{val}");
-        // 在作用域內的值為：12
+        println!("在內部範疇的值為：{val}");
+        // 在範疇內的值為：12
     }
 
     println!("值為：{val}");

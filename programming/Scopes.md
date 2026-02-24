@@ -1,4 +1,4 @@
-# 作用域 (Scopes)
+# 範疇 (Scopes)
 
 ## 所有權 (Ownership)
 
@@ -6,7 +6,7 @@
 {
     let s = String::from("Hello, World!"); // s 是該 String 的擁有者
     println!("{s}"); // 這裡可以使用 s，因為 s 是該值的擁有者
-} // 當 s 離開作用域，其記憶體被自動釋放
+} // 當 s 離開範疇，其記憶體被自動釋放
 ```
 
 ### 移動所有權
@@ -240,5 +240,5 @@ fn main() {
 {
     let file = std::fs::File::open("data.txt").unwrap();
     // 使用 file ...
-} // file 離開作用域，自動關閉文件
+} // file 離開範疇，自動關閉文件
 ```

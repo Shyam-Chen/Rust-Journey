@@ -103,11 +103,15 @@ Problems:
 [1207]: ./src/1207.%20Unique%20Number%20of%20Occurrences/unique_occurrences.rs
 [1207-explanation]: ./src/1207.%20Unique%20Number%20of%20Occurrences/README.md
 
+<a name="stack"></a>
+
 | Stack                              |          |        |      |
 | ---------------------------------- | -------- | ------ | ---- |
 | 2390. Removing Stars From a String | Solution | Medium | 詳解 |
 | 735. Asteroid Collision            | Solution | Medium | 詳解 |
 | 394. Decode String                 | Solution | Medium | 詳解 |
+
+<a name="queue"></a>
 
 | Queue                       |                 |        |                         |
 | --------------------------- | --------------- | ------ | ----------------------- |
@@ -117,12 +121,16 @@ Problems:
 [933]: ./src/933.%20Number%20of%20Recent%20Calls/recent_counter.rs
 [933-explanation]: ./src/933.%20Number%20of%20Recent%20Calls/README.md
 
+<a name="linked-list"></a>
+
 | Linked List                                   |          |        |      |
 | --------------------------------------------- | -------- | ------ | ---- |
 | 2095. Delete the Middle Node of a Linked List | Solution | Medium | 詳解 |
 | 328. Odd Even Linked List                     | Solution | Medium | 詳解 |
 | 206. Reverse Linked List                      | Solution | Easy   | 詳解 |
 | 2130. Maximum Twin Sum of a Linked List       | Solution | Medium | 詳解 |
+
+<a name="binary-tree---dfs"></a>
 
 | Binary Tree - DFS                            |          |        |      |
 | -------------------------------------------- | -------- | ------ | ---- |
@@ -133,15 +141,21 @@ Problems:
 | 1372. Longest ZigZag Path in a Binary Tree   | Solution | Medium | 詳解 |
 | 236. Lowest Common Ancestor of a Binary Tree | Solution | Medium | 詳解 |
 
+<a name="binary-tree---bfs"></a>
+
 | Binary Tree - BFS                        |          |        |      |
 | ---------------------------------------- | -------- | ------ | ---- |
 | 199. Binary Tree Right Side View         | Solution | Medium | 詳解 |
 | 1161. Maximum Level Sum of a Binary Tree | Solution | Medium | 詳解 |
 
+<a name="binary-search-tree"></a>
+
 | Binary Search Tree                  |          |        |      |
 | ----------------------------------- | -------- | ------ | ---- |
 | 700. Search in a Binary Search Tree | Solution | Easy   | 詳解 |
 | 450. Delete Node in a BST           | Solution | Medium | 詳解 |
+
+<a name="graphs---dfs"></a>
 
 | Graphs - DFS                                                 |          |        |      |
 | ------------------------------------------------------------ | -------- | ------ | ---- |
@@ -150,10 +164,14 @@ Problems:
 | 1466. Reorder Routes to Make All Paths Lead to the City Zero | Solution | Medium | 詳解 |
 | 399. Evaluate Division                                       | Solution | Medium | 詳解 |
 
+<a name="graphs---bfs"></a>
+
 | Graphs - BFS                             |          |        |      |
 | ---------------------------------------- | -------- | ------ | ---- |
 | 1926. Nearest Exit from Entrance in Maze | Solution | Medium | 詳解 |
 | 994. Rotting Oranges                     | Solution | Medium | 詳解 |
+
+<a name="heap--priority-queue"></a>
 
 | Heap / Priority Queue                 |          |        |      |
 | ------------------------------------- | -------- | ------ | ---- |
@@ -162,6 +180,8 @@ Problems:
 | 2542. Maximum Subsequence Score       | Solution | Medium | 詳解 |
 | 2462. Total Cost to Hire K Workers    | Solution | Medium | 詳解 |
 
+<a name="binary-search"></a>
+
 | Binary Search                                |          |        |      |
 | -------------------------------------------- | -------- | ------ | ---- |
 | 374. Guess Number Higher or Lower            | Solution | Easy   | 詳解 |
@@ -169,10 +189,14 @@ Problems:
 | 162. Find Peak Element                       | Solution | Medium | 詳解 |
 | 875. Koko Eating Bananas                     | Solution | Medium | 詳解 |
 
+<a name="backtracking"></a>
+
 | Backtracking                              |          |        |      |
 | ----------------------------------------- | -------- | ------ | ---- |
 | 17. Letter Combinations of a Phone Number | Solution | Medium | 詳解 |
 | 216. Combination Sum III                  | Solution | Medium | 詳解 |
+
+<a name="dp---1d"></a>
 
 | DP - 1D                        |          |        |      |
 | ------------------------------ | -------- | ------ | ---- |
@@ -181,6 +205,8 @@ Problems:
 | 198. House Robber              | Solution | Medium | 詳解 |
 | 790. Domino and Tromino Tiling | Solution | Medium | 詳解 |
 
+<a name="dp---multidimensional"></a>
+
 | DP - Multidimensional                                     |          |        |      |
 | --------------------------------------------------------- | -------- | ------ | ---- |
 | 62. Unique Paths                                          | Solution | Medium | 詳解 |
@@ -188,11 +214,15 @@ Problems:
 | 714. Best Time to Buy and Sell Stock with Transaction Fee | Solution | Medium | 詳解 |
 | 72. Edit Distance                                         | Solution | Medium | 詳解 |
 
+<a name="bit-manipulation"></a>
+
 | Bit Manipulation                              |          |        |      |
 | --------------------------------------------- | -------- | ------ | ---- |
 | 338. Counting Bits                            | Solution | Easy   | 詳解 |
 | 136. Single Number                            | Solution | Easy   | 詳解 |
 | 1318. Minimum Flips to Make a OR b Equal to c | Solution | Medium | 詳解 |
+
+<a name="trie"></a>
 
 | Trie                              |                 |        |      |
 | --------------------------------- | --------------- | ------ | ---- |
@@ -201,10 +231,14 @@ Problems:
 
 [208]: ./src/208.%20Implement%20Trie%20(Prefix%20Tree)/trie.rs
 
+<a name="intervals"></a>
+
 | Intervals                                       |          |        |      |
 | ----------------------------------------------- | -------- | ------ | ---- |
 | 435. Non-overlapping Intervals                  | Solution | Medium | 詳解 |
 | 452. Minimum Number of Arrows to Burst Balloons | Solution | Medium | 詳解 |
+
+<a name="monotonic-stack"></a>
 
 | Monotonic Stack         |          |        |      |
 | ----------------------- | -------- | ------ | ---- |

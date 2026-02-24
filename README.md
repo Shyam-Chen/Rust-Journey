@@ -12,7 +12,7 @@
 - [函式 (Functions)](./programming/Functions.md)
 - [控制流程 (Control Flow)](./programming/ControlFlow.md)
 - [模組 (Modules)](./programming/Modules.md)
-- [作用域 (Scopes)](./programming/Scopes.md)
+- [範疇 (Scopes)](./programming/Scopes.md)
 - [屬性 (Attributes)](./programming/Attributes.md)
 - [巨集 (Macros)](./programming/Macros.md)
 - [智慧指標 (Smart Pointers)](./programming/SmartPointers.md)
@@ -54,23 +54,23 @@
   - [滑動視窗 (Sliding Window)](./algorithms/Basic.md#sliding-window)
   - [前綴和 (Prefix Sum)](./algorithms/Basic.md#prefix-sum)
   - [雜湊映射 / 集合 (Hash Map / Set)](./algorithms/Basic.md#hash-map--set)
-  - 堆疊 (Stack)
-  - 佇列 (Queue)
-  - 鏈結串列 (Linked List)
-  - Binary Tree - DFS
-  - Binary Tree - BFS
-  - Binary Search Tree
-  - Graphs - DFS
-  - Graphs - BFS
-  - Heap / Priority Queue
-  - 二分搜尋 (Binary Search)
-  - 回溯 (Backtracking)
-  - DP - 1D
-  - DP - Multidimensional
-  - Bit Manipulation
-  - 字典樹 (Trie)
-  - Intervals
-  - Monotonic Stack
+  - [堆疊 (Stack)](./algorithms/Basic.md#stack)
+  - [佇列 (Queue)](./algorithms/Basic.md#queue)
+  - [鏈結串列 (Linked List)](./algorithms/Basic.md#linked-list)
+  - [Binary Tree - DFS](./algorithms/Basic.md#binary-tree---dfs)
+  - [Binary Tree - BFS](./algorithms/Basic.md#binary-tree---bfs)
+  - [二元搜尋樹 (Binary Search Tree)](./algorithms/Basic.md#binary-search-tree)
+  - [Graphs - DFS](./algorithms/Basic.md#graphs---dfs)
+  - [Graphs - BFS](./algorithms/Basic.md#graphs---bfs)
+  - [Heap / Priority Queue](./algorithms/Basic.md#heap--priority-queue)
+  - [二分搜尋 (Binary Search)](./algorithms/Basic.md#binary-search)
+  - [回溯 (Backtracking)](./algorithms/Basic.md#backtracking)
+  - [一維動態規劃 (DP - 1D)](./algorithms/Basic.md#dp---1d)
+  - [多維動態規劃 (DP - Multidimensional)](./algorithms/Basic.md#dp---multidimensional)
+  - [位元操作 (Bit Manipulation)](./algorithms/Basic.md#bit-manipulation)
+  - [字典樹 (Trie)](./algorithms/Basic.md#trie)
+  - [Intervals](./algorithms/Basic.md#intervals)
+  - [Monotonic Stack](./algorithms/Basic.md#monotonic-stack)
 - [Advanced - Top Interview 150](./algorithms/Advanced.md)
   - 陣列 / 字串 (Array / String)
   - 雙指標 (Two Pointers)
@@ -90,7 +90,7 @@
   - 分治 (Divide & Conquer)
   - Kadane's Algorithm
   - Binary Search
-  - Heap
+  - 堆積 (Heap)
   - Bit Manipulation
   - Math
   - 1D DP
@@ -98,12 +98,12 @@
 - [Impactful - Top 100 Liked](./algorithms/Impactful.md)
   - 回溯 (Backtracking)
   - Binary Search
-  - Binary Tree
-  - Dynamic Programming
-  - Graph
-  - Greedy
+  - 二元樹 (Binary Tree)
+  - 動態規劃 (Dynamic Programming)
+  - 圖 (Graph)
+  - 貪婪 (Greedy)
   - Hashing
-  - Heap
+  - 堆積 (Heap)
   - Linked Lists
   - Matrix
   - Sliding Window
@@ -253,7 +253,8 @@ Axum
 
 Axum Template<br>
 Axum + Leptos Template<br>
-Axum + GraphQL Template
+Axum + GraphQL Template<br>
+Tonic Template
 
 ---
 
@@ -275,19 +276,9 @@ Raspberry Pi
 - MQTT 通訊協定 + `rumqttc`
   - 無線 Wireless + 微控制器 (Raspberry Pi Pico 2 W)
 - 機械手臂 (RiceLee Robot Arm Kit for Raspberry Pi)
-- Jetson
-  - Jetson Orin Nano (8GB)
-- STM32 + `embassy-stm32`
-  - STM32F407(VG)
-- Ollama 模型部署
-  - jetson-containers
-  - k3s
 - NFC Module 讀寫卡模組 PN532
 - Digi-Key 電子元件 (Electronic Components)
 
 Raspberry Pi Template<br>
 Raspberry Pi + Leptos + Tauri Template<br>
-Raspberry Pi Pico Template<br>
-Jetson Template<br>
-Jetson + Leptos + Tauri Template<br>
-STM32 Template
+Raspberry Pi Pico Template

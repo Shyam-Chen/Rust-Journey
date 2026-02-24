@@ -83,7 +83,7 @@ struct Rectangle {
 }
 
 impl Rectangle {
-    // 關聯函式（不需要 self）
+    // 初始化，關聯函式（不需要 self）
     fn new(width: u32, height: u32) -> Self {
         Self { width, height }
     }
@@ -192,6 +192,8 @@ fn main() {
     animal_sound_heap(Box::new(dog)); // 汪 Woof
 }
 ```
+
+`&dyn` 為動態派發，至[範疇 (Scopes)](./Scopes.md) 了解更多。
 
 ## 泛型 (Generics)
 
