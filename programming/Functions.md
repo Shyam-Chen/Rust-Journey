@@ -74,6 +74,40 @@ fn main() {
 }
 ```
 
+```rs
+fn main() {
+    let mut count = 0;
+
+    {
+        let mut add = || {
+            count += 1;
+        };
+
+        add();
+    } // add 在此離開作用域，借用自動釋放
+
+    println!("{count}");
+    // 1
+}
+```
+
+改用 `drop` (`std::mem::drop`) 釋放：
+
+```rs
+fn main() {
+    let mut count = 0;
+
+    let mut add = || {
+        count += 1;
+    };
+
+    add();
+    drop(add); // 釋放對 count 的可變借用
+    println!("{count}");
+    // 1
+}
+```
+
 ## 實作 (Implementations)
 
 ```rs
