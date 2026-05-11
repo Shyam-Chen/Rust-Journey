@@ -2,6 +2,13 @@
 
 🦀 From Zero to Hero, Open Source to Business Applications
 
+1. [程式設計 (Programming)](#程式設計-programming)
+2. [演算法 (Algorithms)](#演算法-algorithms)
+3. [命令列應用 (Command Line Applications)](#命令列應用-command-line-applications)
+4. [網頁應用 (Web Applications)](#網頁應用-web-applications)
+5. [伺服器應用 (Server Applications)](#伺服器應用-server-applications)
+6. [嵌入式應用 (Embedded Applications)](#嵌入式應用-embedded-applications)
+
 ---
 
 ## 程式設計 (Programming)
@@ -176,7 +183,7 @@ Leptos
     - Amazon Elastic Kubernetes Service
 - 本地部署 (輕量化) + Kubernetes K3s
   - Raspberry Pi 5 Model B
-- 跨平台原生應用 `tauri`
+- 跨平台應用 `tauri`
   - Pull to Refresh
   - Plugins
     - Store
