@@ -5,7 +5,7 @@
 1. [程式設計 (Programming)](#程式設計-programming)
 2. [演算法 (Algorithms)](#演算法-algorithms)
 3. [命令列應用 (Command Line Applications)](#命令列應用-command-line-applications)
-4. [網頁應用 (Web Applications)](#網頁應用-web-applications)
+4. [~~網頁應用 (Web Applications)~~](#網頁應用-web-applications)
 5. [伺服器應用 (Server Applications)](#伺服器應用-server-applications)
 6. [嵌入式應用 (Embedded Applications)](#嵌入式應用-embedded-applications)
 
@@ -14,6 +14,7 @@
 ## 程式設計 (Programming)
 
 - [起手式 (Getting Started)](./programming/GettingStarted.md)
+- [註解 (Comments)](./programming/Comments.md)
 - [變數 (Variables)](./programming/Variables.md)
 - [資料型別 (Data Types)](./programming/DataTypes.md)
 - [函式 (Functions)](./programming/Functions.md)
@@ -140,7 +141,12 @@ Clap Template
 
 ---
 
-## 網頁應用 (Web Applications)
+## ~~網頁應用 (Web Applications)~~
+
+[🤯 主要的現況]：
+
+- 沒有 HMR (Hot Module Replacement) 的功能 ← 開發體驗會不好
+- WASM (WebAssembly) 不能直接操作 DOM ← 效能無法到極致
 
 Leptos
 
