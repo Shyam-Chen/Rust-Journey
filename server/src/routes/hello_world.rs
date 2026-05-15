@@ -10,33 +10,26 @@ struct HelloWorld {
 }
 
 #[derive(Deserialize, Serialize)]
-struct HelloPayload {
+struct HelloWorldPayload {
     name: String,
 }
 
-fn handler() -> Router {
-    let mut router = Router::new();
+async fn get_hello_world() -> Json<HelloWorld> {
+    Json(HelloWorld {
+        message: "Hello, World!".into(),
+    })
+}
 
-    router = router.route(
-        "/",
-        get(|| async {
-            Json(HelloWorld {
-                message: "Hello, World!".into(),
-            })
-        }),
-    );
-
-    router = router.route(
-        "/",
-        post(|Json(payload): Json<HelloPayload>| async move {
-            let message = format!("Hello, {}!", payload.name);
-            Json(HelloWorld { message })
-        }),
-    );
-
-    router
+async fn post_hello_world(Json(payload): Json<HelloWorldPayload>) -> Json<HelloWorld> {
+    let message = format!("Hello, {}!", payload.name);
+    Json(HelloWorld { message })
 }
 
 pub fn router() -> Router {
-    Router::new().nest("/hello-world", handler())
+    Router::new().nest(
+        "/hello-world",
+        Router::new()
+            .route("/", get(get_hello_world))
+            .route("/", post(post_hello_world)),
+    )
 }

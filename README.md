@@ -5,9 +5,10 @@
 1. [程式設計 (Programming)](#程式設計-programming)
 2. [演算法 (Algorithms)](#演算法-algorithms)
 3. [命令列應用 (Command Line Applications)](#命令列應用-command-line-applications)
-4. [~~網頁應用 (Web Applications)~~](#網頁應用-web-applications)
-5. [伺服器應用 (Server Applications)](#伺服器應用-server-applications)
-6. [嵌入式應用 (Embedded Applications)](#嵌入式應用-embedded-applications)
+4. [圖形使用者介面應用 (Graphical User Interface Applications)](#圖形使用者介面應用-graphical-user-interface-applications)
+5. [~~網頁應用 (Web Applications)~~](#網頁應用-web-applications)
+6. [~~伺服器應用 (Server Applications)~~](#伺服器應用-server-applications)
+7. [嵌入式系統應用 (Embedded Systems Applications)](#嵌入式系統應用-embedded-systems-applications)
 
 ---
 
@@ -141,6 +142,12 @@ Clap Template
 
 ---
 
+## 圖形使用者介面應用 (Graphical User Interface Applications)
+
+Iced
+
+---
+
 ## ~~網頁應用 (Web Applications)~~
 
 [🤯 主要的現況]：
@@ -208,7 +215,7 @@ Leptos + Tauri Template
 
 ---
 
-## 伺服器應用 (Server Applications)
+## ~~伺服器應用 (Server Applications)~~
 
 Axum
 
@@ -271,9 +278,12 @@ Tonic Template
 
 ---
 
-## 嵌入式應用 (Embedded Applications)
+## 嵌入式系統應用 (Embedded Systems Applications)
 
 Raspberry Pi
+
+單板電腦 (Single-Board Computer) -> Raspberry Pi 5 Model B<br>
+微控制器 (Microcontroller) -> Raspberry Pi Pico 2 (W)
 
 - Blinky LED
   - 單板電腦 (Raspberry Pi 5 Model B, 16GB RAM, 128GB Storage) + `gpio-cdev`
@@ -281,7 +291,7 @@ Raspberry Pi
 - 音頻 (Raspberry Pi DigiAMP+)
   - 揚聲器 (Visaton FR 10 - 4 OHM)
 - 相機 (Raspberry Pi Camera Module 3) + `libcamera`
-- 觸控螢幕 (Raspberry Pi Touch Display 2) + `tauri` + `leptos`
+- ~~觸控螢幕 (Raspberry Pi Touch Display 2) + `tauri` + `leptos`~~
 - 微控制器 (Raspberry Pi Pico 2) + `embassy-rp`
 - 感測器套件 (Yahboom Sensor Kit)
 - GUI + `embedded-graphics`
@@ -293,5 +303,5 @@ Raspberry Pi
 - Digi-Key 電子元件 (Electronic Components)
 
 Raspberry Pi Template<br>
-Raspberry Pi + Leptos + Tauri Template<br>
+~~Raspberry Pi + Leptos + Tauri Template~~<br>
 Raspberry Pi Pico Template
