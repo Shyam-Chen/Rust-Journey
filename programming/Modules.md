@@ -158,10 +158,10 @@ fn main() {
 ## `super::`
 
 ```coffee
-src/
+src
 ├── main.rs
 ├── parent.rs     ← parent 模組本體
-└── parent/
+└── parent
     └── child.rs  ← child 模組本體
 ```
 
@@ -171,6 +171,7 @@ mod parent;
 
 fn main() {
     parent::greet();
+    parent::sub_greet();
 }
 ```
 
@@ -181,11 +182,16 @@ mod child;
 pub fn greet() {
     println!("Hello from parent");
 }
+
+pub fn sub_greet() {
+    child::run();
+}
 ```
 
 ```rs
 // src/parent/child.rs
 pub fn run() {
+    println!("Hello from child");
     super::greet();
 }
 ```
