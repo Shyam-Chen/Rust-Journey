@@ -52,6 +52,28 @@ fn main() {
 }
 ```
 
+對函式做封裝：
+
+```rs
+fn hello(name: &str) {
+    println!("Hello, {name}!");
+}
+
+macro_rules! hello {
+    () => {
+        hello("World")
+    }; // 無參數 → 預設值
+    ($name:expr) => {
+        hello($name)
+    }; // 有參數 → 帶入值
+}
+
+fn main() {
+    hello!(); // Hello, World!
+    hello!("Alice"); // Hello, Alice!
+}
+```
+
 ## 內建
 
 ### `todo!`

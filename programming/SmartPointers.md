@@ -49,8 +49,8 @@ fn main() {
 
 多重所有權 + 共享相同資料
 
-並行 (Concurrency) 使用改 `Arc<T>`。
+並行 (Parallelism) 使用改 `Arc<T>`。
 
 ## 可變借用檢查 `RefCell<T>`
 
-並行 (Concurrency) 使用改 `Mutex<T>`。
+並行 (Parallelism) 使用改 `Mutex<T>`。

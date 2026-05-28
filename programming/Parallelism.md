@@ -1,4 +1,4 @@
-# 並行 (Concurrency)
+# 並行 (Parallelism)
 
 ```rs
 use std::thread;

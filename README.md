@@ -26,7 +26,7 @@
 - [巨集 (Macros)](./programming/Macros.md)
 - [智慧指標 (Smart Pointers)](./programming/SmartPointers.md)
 - [非同步 (Asynchronous)](./programming/Asynchronous.md)
-- [並行 (Concurrency)](./programming/Concurrency.md)
+- [並行 (Parallelism)](./programming/Parallelism.md)
 - [套件管理器 (Package Manager)](./programming/PackageManager.md)
 - [錯誤處理 (Error Handling)](./programming/ErrorHandling.md)
 - [數學 (Math)](./programming/Math.md)
@@ -216,6 +216,10 @@ Leptos + Tauri Template
 ---
 
 ## ~~伺服器應用 (Server Applications)~~
+
+[🤯 主要的現況]：
+
+- Actix Web
 
 Axum
 
