@@ -340,7 +340,7 @@ fn main() {
 fn main() {
     let vec = vec![1, 2, 3];
     vec.into_iter().for_each(|num| println!("{num}"));
-    // println!("{vec:?}"); // ❌
+    // println!("{vec:?}"); // ❌ 所有權被轉移，因 into_iter() 會消耗 (consume) 集合
 }
 ```
 

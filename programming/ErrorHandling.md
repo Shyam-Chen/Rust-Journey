@@ -29,5 +29,5 @@ fn main() -> Result<()> {
     println!("{val}");
     Ok(())
 }
-// Error: x cannot be zero
+// ❌ Error: x cannot be zero
 ```

@@ -39,7 +39,7 @@ fn main() {
 }
 ```
 
-## 模式比對 (Match)
+## 模式匹配 (Match)
 
 ```rs
 fn main() {
@@ -55,7 +55,37 @@ fn main() {
 // 二
 ```
 
-守衛:
+匹配多個值，使用 `|`：
+
+```rs
+fn main() {
+    let number = 2;
+
+    match number {
+        1 | 2 => println!("一"),
+        3 | 4 | 5 => println!("二"),
+        _ => println!("其他"),
+    }
+}
+// 一
+```
+
+匹配範圍，使用 `..=`：
+
+```rs
+fn main() {
+    let number = 2;
+
+    match number {
+        1..=10 => println!("一"), // 匹配 1 ~ 10
+        11..=20 => println!("二"), // 匹配 11 ~ 20
+        _ => println!("其他"),
+    }
+}
+// 一
+```
+
+條件守衛，搭配 `if`:
 
 ```rs
 fn main() {
@@ -68,6 +98,67 @@ fn main() {
     }
 }
 // 奇數: 7
+```
+
+匹配範圍與綁定值，使用 `@`：
+
+```rs
+fn main() {
+    let number = 2;
+
+    match number {
+        n @ 1..=10 => println!("位於 1 ~ 10 區間: {n}"),
+        n @ 11..=20 => println!("位於 11 ~ 20 區間: {n}"),
+        _ => println!("其他"),
+    }
+}
+// 位於 1 ~ 10 區間: 2
+```
+
+多行區塊：
+
+```rs
+fn main() {
+    let number = 2;
+
+    match number {
+        1 => println!("一"),
+        2 => {
+            println!("二");
+            println!("二");
+        } // 無逗號 `,`
+        _ => println!("其他"),
+    }
+}
+// 二
+// 二
+```
+
+多行區塊回傳值：
+
+```rs
+fn main() {
+    let number = 2;
+
+    let result = match number {
+        1 => {
+            let a = 10;
+            let b = 20;
+            a + b
+        }
+        2 => {
+            let multiple = 5;
+            number * multiple
+        }
+        _ => {
+            println!("其他");
+            0
+        }
+    };
+
+    println!("result = {result}");
+    // result = 10
+}
 ```
 
 ## 無限迴圈 (Loops)
