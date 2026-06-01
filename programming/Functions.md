@@ -15,6 +15,20 @@ fn greet_person(name: &str) {
 }
 ```
 
+`Option<T>` 參數：
+
+```rs
+fn hello(name: Option<&str>) {
+    let name = name.unwrap_or("World");
+    println!("Hello, {name}!");
+}
+
+fn main() {
+    hello(None); // Hello, World!
+    hello(Some("Alice")); // Hello, Alice!
+}
+```
+
 ### 表達式 (Expressions)
 
 ```rs

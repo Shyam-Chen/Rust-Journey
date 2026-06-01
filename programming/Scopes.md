@@ -20,7 +20,7 @@ fn main() {
 }
 ```
 
-### 借用 (Borrowing, 引用)
+### 借用 (Borrowing, 取引用)
 
 不可變借用 `&T`: 只能讀取，不能修改。
 
@@ -47,7 +47,7 @@ fn main() {
 }
 ```
 
-解引用 `*T` (Dereferencing):
+### 解引用 `*T` (Dereferencing)
 
 ```rs
 fn main() {
@@ -58,6 +58,15 @@ fn main() {
     println!("s2 指向的值: {}", *s2); // s2 指向的值: Hello
     // println!("s2 指向的值: {}", s1 == s2); // ❌ 未實作 String == &String
     println!("{}", s1 == *s2); // true
+}
+```
+
+```rs
+fn main() {
+    let mut val = 1;
+    let r = &mut val; // 允許透過取引用修改原始值，此時借用規則生效，同一時間只能有一個可變借用
+    *r = 100; // 存取引用所指向的真實值，將 r 所指向的記憶體位置的值改為 100
+    println!("{val}"); // 100
 }
 ```
 
@@ -85,7 +94,7 @@ fn main() {
 }
 ```
 
-引用模式 (解構借用的值):
+### 引用模式 (解構借用的值)
 
 ```rs
 fn main() {
@@ -116,7 +125,7 @@ fn main() {
 // value 還可以被訪問: Some("Hello, World!")
 ```
 
-動態派發 `&dyn`:
+### 動態派發 `&dyn`
 
 建立特徵的動態引用。
 
@@ -231,6 +240,45 @@ fn main() {
     let closure = move || println!("{val}");
     closure();
     println!("{val}"); // val 仍然有效
+}
+```
+
+### 生命週期
+
+當函式涉及多個引用的輸入/輸出時，編譯器無法自行判斷回傳的引用來自哪裡，這時就需要手動標註。
+
+```rs
+// ❌ 編譯器不知道回傳哪個取引用
+fn longest(s1: &str, s2: &str) -> &str {
+    if s1.len() > s2.len() { s1 } else { s2 }
+}
+```
+
+Lifetime 標註，以 `'` 開頭，通常再搭配小寫字母：
+
+```rs
+fn longest<'a>(s1: &'a str, s2: &'a str) -> &'a str {
+    if s1.len() > s2.len() { s1 } else { s2 }
+}
+```
+
+當 `struct` 持有引用時，必須標註：
+
+```rs
+struct Article<'a> {
+    content: &'a str, // content 的存活時間不能超過 Article
+}
+
+impl<'a> Article<'a> {
+    fn get_content(&self) -> &str {
+        self.content
+    }
+}
+
+fn main() {
+    let text = String::from("Hello, World!");
+    let article = Article { content: &text };
+    println!("{}", article.get_content());
 }
 ```
 
