@@ -3,8 +3,8 @@
 ## 應用程式 (Application)
 
 ```sh
-$ cargo new my-cli
-$ cd my-cli
+$ cargo new my-cli-app
+$ cd my-cli-app
 ```
 
 ```sh
@@ -43,7 +43,7 @@ Hello, Bob!
 $ cargo run -- -h
 我的第一個 CLI 工具
 
-Usage: my-cli [OPTIONS]
+Usage: my-cli-app [OPTIONS]
 
 Options:
   -n, --name <NAME>  輸入你的名字 [default: World]
@@ -65,17 +65,17 @@ $ cargo build --release
 將執行檔安裝到本地:
 
 ```sh
-$ cp ./target/release/my-cli $HOME/.cargo/bin/
+$ cp ./target/release/my-cli-app $HOME/.cargo/bin/
 ```
 
 ```sh
-$ my-cli
+$ my-cli-app
 Hello, World!
 
-$ my-cli --name Alice
+$ my-cli-app --name Alice
 Hello, Alice!
 
-$ my-cli -n Bob
+$ my-cli-app -n Bob
 Hello, Bob!
 ```
 

@@ -86,14 +86,14 @@
 
 Clap
 
-- [應用程式 (Application)](./command-line/CommandLine.md#應用程式-application)
-- [子命令 (Subcommands)](./command-line/CommandLine.md#子命令-subcommands)
-- [表格 (Tables)](./command-line/CommandLine.md#表格-tables)
-- [進展 (Progresses)](./command-line/CommandLine.md#進展-progresses)
-- [顏色 (Colors)](./command-line/CommandLine.md#顏色-colors)
-- [提示字元 (Prompts)](./command-line/CommandLine.md#提示字元-prompts)
-- [非同步 (Asynchronous)](./command-line/CommandLine.md#非同步-asynchronous)
-- [開箱 (Unboxing Crates)](./command-line/CommandLine.md#開箱-unboxing-crates)
+- [應用程式 (Application)](./command-line/README.md#應用程式-application)
+- [子命令 (Subcommands)](./command-line/README.md#子命令-subcommands)
+- [表格 (Tables)](./command-line/README.md#表格-tables)
+- [進展 (Progresses)](./command-line/README.md#進展-progresses)
+- [顏色 (Colors)](./command-line/README.md#顏色-colors)
+- [提示字元 (Prompts)](./command-line/README.md#提示字元-prompts)
+- [非同步 (Asynchronous)](./command-line/README.md#非同步-asynchronous)
+- [開箱 (Unboxing Crates)](./command-line/README.md#開箱-unboxing-crates)
 - Tree CLI - Recursively displays directories and files in a tree-like structure
 - Sheetplot CLI - Generates charts and visualizations directly from spreadsheet files
 
@@ -105,7 +105,7 @@ Clap Template
 
 Ratatui
 
-- [應用程式 (Application)]
+- [應用程式 (Application)](./tui-applications/README.md)
 
 ---
 
@@ -113,7 +113,7 @@ Ratatui
 
 Egui
 
-- [應用程式 (Application)]
+- [應用程式 (Application)](./gui-applications/README.md)
 
 ---
 
