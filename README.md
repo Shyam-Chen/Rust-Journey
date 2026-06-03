@@ -4,11 +4,10 @@
 
 1. [程式設計 (Programming)](#程式設計-programming)
 2. [演算法 (Algorithms)](#演算法-algorithms)
-3. [命令列應用 (Command Line Applications)](#命令列應用-command-line-applications)
-4. [圖形使用者介面應用 (Graphical User Interface Applications)](#圖形使用者介面應用-graphical-user-interface-applications)
-5. [~~網頁應用 (Web Applications)~~](#網頁應用-web-applications)
-6. [~~伺服器應用 (Server Applications)~~](#伺服器應用-server-applications)
-7. [嵌入式系統應用 (Embedded Systems Applications)](#嵌入式系統應用-embedded-systems-applications)
+3. [CLI 應用 (CLI Applications)](#cli-應用-cli-applications)
+4. [TUI 應用 (TUI Applications)](#tui-應用-tui-applications)
+5. [GUI 應用 (GUI Applications)](#gui-應用-gui-applications)
+6. [嵌入式應用 (Embedded Applications)](#嵌入式應用-embedded-applications)
 
 ---
 
@@ -83,7 +82,7 @@
 
 ---
 
-## 命令列應用 (Command Line Applications)
+## CLI 應用 (CLI Applications)
 
 Clap
 
@@ -102,9 +101,17 @@ Clap Template
 
 ---
 
-## 圖形使用者介面應用 (Graphical User Interface Applications)
+## TUI 應用 (TUI Applications)
 
-Iced
+Ratatui
+
+---
+
+## GUI 應用 (GUI Applications)
+
+Egui
+
+- [應用程式 (Application)]
 
 ---
 
@@ -242,7 +249,7 @@ Tonic Template
 
 ---
 
-## 嵌入式系統應用 (Embedded Systems Applications)
+## 嵌入式應用 (Embedded Applications)
 
 Raspberry Pi
 

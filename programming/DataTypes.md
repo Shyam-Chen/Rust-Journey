@@ -385,6 +385,32 @@ fn main() {
 }
 ```
 
+#### 忽略其餘元素 `..`
+
+```rs
+fn main() {
+    let vec = vec![1, 2, 3, 4, 5];
+
+    if let [first, .., last] = vec.as_slice() {
+        println!("first = {first}, last = {last}");
+        // first = 1, last = 5
+    }
+}
+```
+
+用 `@` 綁定其餘元素到自訂命名的 `rest` 變數上：
+
+```rs
+fn main() {
+    let vec = vec![1, 2, 3, 4, 5];
+
+    if let [_first, rest @ .., _last] = vec.as_slice() {
+        println!("rest = {rest:?}");
+        // rest = [2, 3, 4]
+    }
+}
+```
+
 ## 元組 (Tuples)
 
 https://doc.rust-lang.org/stable/std/primitive.tuple.html
@@ -446,6 +472,66 @@ fn main() {
     println!("username = {}", user.username); // username = graydon.hoare
     println!("email = {}", user.email); // email = graydon.hoare@gmail.com
     println!("active = {}", user.active); // active = true
+}
+```
+
+欄位簡寫：
+
+與 `struct` 欄位名稱完全相同時，可使用簡寫語法。
+
+```rs
+#[derive(Debug)]
+#[allow(dead_code)]
+struct User {
+    username: String,
+    active: bool,
+    version: u64,
+}
+
+fn build_user(username: String) -> User {
+    User {
+        username, // 等同於 username: username
+        active: true,
+        version: 1,
+    }
+}
+
+fn main() {
+    let user = build_user("Alice".into());
+    println!("{user:?}");
+    // User { username: "Alice", active: true, version: 1 }
+}
+```
+
+其餘欄位 `..T`：
+
+```rs
+#[derive(Debug)]
+#[allow(dead_code)]
+struct User {
+    username: String,
+    active: bool,
+    version: u64,
+}
+
+fn build_user(username: String) -> User {
+    User {
+        username,
+        active: true,
+        version: 1,
+    }
+}
+
+fn main() {
+    let user1 = build_user("Alice".into());
+
+    let user2 = User {
+        username: "Bob".into(),
+        ..user1 // 其餘欄位從 user1 複製
+    };
+
+    println!("{user1:?}"); // User { username: "Alice", active: true, version: 1 }
+    println!("{user2:?}"); // User { username: "Bob", active: true, version: 1 }
 }
 ```
 
