@@ -105,6 +105,8 @@ Clap Template
 
 Ratatui
 
+- [應用程式 (Application)]
+
 ---
 
 ## GUI 應用 (GUI Applications)
@@ -112,6 +114,36 @@ Ratatui
 Egui
 
 - [應用程式 (Application)]
+
+---
+
+## 嵌入式應用 (Embedded Applications)
+
+Raspberry Pi
+
+單板電腦 (Single-Board Computer) -> Raspberry Pi 5 Model B<br>
+微控制器 (Microcontroller) -> Raspberry Pi Pico 2 (W)
+
+- Blinky LED
+  - 單板電腦 (Raspberry Pi 5 Model B, 16GB RAM, 128GB Storage) + `gpio-cdev`
+- 感測器 (Raspberry Pi Sense HAT)
+- 音頻 (Raspberry Pi DigiAMP+)
+  - 揚聲器 (Visaton FR 10 - 4 OHM)
+- 相機 (Raspberry Pi Camera Module 3) + `libcamera`
+- ~~觸控螢幕 (Raspberry Pi Touch Display 2) + `tauri` + `leptos`~~
+- 微控制器 (Raspberry Pi Pico 2) + `embassy-rp`
+- 感測器套件 (Yahboom Sensor Kit)
+- GUI + `embedded-graphics`
+- UART 串列通訊 + `serialport`
+- MQTT 通訊協定 + `rumqttc`
+  - 無線 Wireless + 微控制器 (Raspberry Pi Pico 2 W)
+- 機械手臂 (RiceLee Robot Arm Kit for Raspberry Pi)
+- NFC Module 讀寫卡模組 PN532
+- Digi-Key 電子元件 (Electronic Components)
+
+Raspberry Pi Template<br>
+~~Raspberry Pi + Leptos + Tauri Template~~<br>
+Raspberry Pi Pico Template
 
 ---
 
@@ -246,33 +278,3 @@ Axum Template<br>
 Axum + Leptos Template<br>
 Axum + GraphQL Template<br>
 Tonic Template
-
----
-
-## 嵌入式應用 (Embedded Applications)
-
-Raspberry Pi
-
-單板電腦 (Single-Board Computer) -> Raspberry Pi 5 Model B<br>
-微控制器 (Microcontroller) -> Raspberry Pi Pico 2 (W)
-
-- Blinky LED
-  - 單板電腦 (Raspberry Pi 5 Model B, 16GB RAM, 128GB Storage) + `gpio-cdev`
-- 感測器 (Raspberry Pi Sense HAT)
-- 音頻 (Raspberry Pi DigiAMP+)
-  - 揚聲器 (Visaton FR 10 - 4 OHM)
-- 相機 (Raspberry Pi Camera Module 3) + `libcamera`
-- ~~觸控螢幕 (Raspberry Pi Touch Display 2) + `tauri` + `leptos`~~
-- 微控制器 (Raspberry Pi Pico 2) + `embassy-rp`
-- 感測器套件 (Yahboom Sensor Kit)
-- GUI + `embedded-graphics`
-- UART 串列通訊 + `serialport`
-- MQTT 通訊協定 + `rumqttc`
-  - 無線 Wireless + 微控制器 (Raspberry Pi Pico 2 W)
-- 機械手臂 (RiceLee Robot Arm Kit for Raspberry Pi)
-- NFC Module 讀寫卡模組 PN532
-- Digi-Key 電子元件 (Electronic Components)
-
-Raspberry Pi Template<br>
-~~Raspberry Pi + Leptos + Tauri Template~~<br>
-Raspberry Pi Pico Template
