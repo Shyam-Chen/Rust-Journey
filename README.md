@@ -94,8 +94,9 @@ Clap
 - [提示字元 (Prompts)](./command-line/README.md#提示字元-prompts)
 - [非同步 (Asynchronous)](./command-line/README.md#非同步-asynchronous)
 - [開箱 (Unboxing Crates)](./command-line/README.md#開箱-unboxing-crates)
-- Tree CLI - Recursively displays directories and files in a tree-like structure
-- Sheetplot CLI - Generates charts and visualizations directly from spreadsheet files
+- 實作練習 (Practical Exercises)
+  - Tree CLI - Recursively displays directories and files in a tree-like structure
+  - Sheetplot CLI - Generates charts and visualizations directly from spreadsheet files
 
 Clap Template
 
@@ -121,26 +122,27 @@ Egui
 
 Raspberry Pi
 
-單板電腦 (Single-Board Computer) -> Raspberry Pi 5 Model B<br>
-微控制器 (Microcontroller) -> Raspberry Pi Pico 2 (W)
+單板電腦 (SBC, Single-Board Computer) -> Raspberry Pi 5 Model B<br>
+微控制器 (MCU, Microcontroller Unit) -> Raspberry Pi Pico 2 W
 
 - Blinky LED
   - 單板電腦 (Raspberry Pi 5 Model B, 16GB RAM, 128GB Storage) + `gpio-cdev`
+- 觸控螢幕 (Raspberry Pi Touch Display 2)
+- 微控制器 (Raspberry Pi Pico 2 W) + `embassy-rp`
+- 感測器套件 (Yahboom Sensor Kit)
+- MQTT 通訊協定
+  - SBC: `rumqttc`
+  - MCU: `rust-mqtt`
+  - Broker: `rmqtt`
 - 感測器 (Raspberry Pi Sense HAT)
 - 音頻 (Raspberry Pi DigiAMP+)
   - 揚聲器 (Visaton FR 10 - 4 OHM)
 - 相機 (Raspberry Pi Camera Module 3) + `libcamera`
-- ~~觸控螢幕 (Raspberry Pi Touch Display 2) + `tauri` + `leptos`~~
-- 微控制器 (Raspberry Pi Pico 2) + `embassy-rp`
-- 感測器套件 (Yahboom Sensor Kit)
 - GUI + `embedded-graphics`
 - UART 串列通訊 + `serialport`
-- MQTT 通訊協定 + `rumqttc`
-  - 無線 Wireless + 微控制器 (Raspberry Pi Pico 2 W)
 - 機械手臂 (RiceLee Robot Arm Kit for Raspberry Pi)
 - NFC Module 讀寫卡模組 PN532
 - Digi-Key 電子元件 (Electronic Components)
 
 Raspberry Pi Template<br>
-~~Raspberry Pi + Leptos + Tauri Template~~<br>
 Raspberry Pi Pico Template

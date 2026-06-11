@@ -199,10 +199,21 @@ async fn handle_install(package: String) {
 
 ## 開箱 (Unboxing Crates)
 
+`cat` with syntax highlighting：
+
 ```sh
 $ cargo install bat --locked
 ```
 
+HTTP load generator：
+
 ```sh
 $ cargo install oha --locked
+```
+
+Copy/paste detector：
+
+```sh
+$ cargo install jscpd --locked
+$ cpd <SPECIFIC_PATH>
 ```
