@@ -206,6 +206,64 @@ fn main() {
 }
 ```
 
+### 原始字串 (Raw Strings)
+
+`r"..."`：
+
+```rs
+fn main() {
+    // 一般字串：需要轉義反斜線
+    let normal_path = "C:\\Users\\Name\\Documents";
+
+    // 原始字串：直接寫入反斜線
+    let raw_path = r"C:\Users\Name\Documents";
+
+    println!("{normal_path}"); // C:\Users\Name\Documents
+    println!("{raw_path}"); // C:\Users\Name\Documents
+}
+```
+
+`r#"..."#`：
+
+```rs
+fn main() {
+    // 一般字串：需要轉義雙引號
+    let normal_quote = "He said, \"Hello, Rust!\"";
+
+    // 原始字串：使用 # 包覆，裡面的雙引號就能直接寫
+    let raw_quote = r#"He said, "Hello, Rust!""#;
+
+    println!("{normal_quote}"); // He said, "Hello, Rust!"
+    println!("{raw_quote}"); // He said, "Hello, Rust!"
+}
+```
+
+`r##"..."##`：
+
+```rs
+fn main() {
+    // 這裡的 JSON 內容包含了 "extension": "#404"
+    // 因為雙引號後面直接緊接著分機的 # 字號，形成了 `"#` 這樣的組合。
+    // 為了避免編譯器將其誤判為字串結束，外層必須使用兩個井字號 r##"..."##
+    let employee_info = r##"
+        {
+            "name": "Alice Smith",
+            "phone": "02-9876-5432",
+            "extension": "#404",
+            "email": "alice.smith@example.com"
+        }
+    "##;
+
+    println!("{employee_info}");
+    // {
+    //     "name": "Alice Smith",
+    //     "phone": "02-9876-5432",
+    //     "extension": "#404",
+    //     "email": "alice.smith@example.com"
+    // }
+}
+```
+
 ## 陣列 (Arrays)
 
 ### 靜態陣列 (Arrays)
