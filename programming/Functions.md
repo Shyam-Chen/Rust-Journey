@@ -29,6 +29,42 @@ fn main() {
 }
 ```
 
+能用 `slice` 就不要用 `Vec`：
+
+```rs
+fn sum(nums: &Vec<i32>) -> i32 {
+    nums.iter().sum()
+}
+
+fn main() {
+    let my_vec = vec![1, 2, 3];
+    let my_arr = [1, 2, 3];
+    let my_slice = &my_arr[1..];
+
+    sum(&my_vec);
+    sum(&my_arr); // ❌ Error: expected &Vec<i32, Global>, found &[i32; 3]
+    sum(my_slice); // ❌ Error: expected &Vec<i32, Global>, found &[i32]
+    sum(&[10, 20, 30]); // ❌ Error: expected &Vec<i32, Global>, found &[i32; 3]
+}
+```
+
+```rs
+fn sum(nums: &[i32]) -> i32 {
+    nums.iter().sum()
+}
+
+fn main() {
+    let my_vec = vec![1, 2, 3];
+    let my_arr = [1, 2, 3];
+    let my_slice = &my_arr[1..];
+
+    sum(&my_vec);
+    sum(&my_arr);
+    sum(my_slice);
+    sum(&[10, 20, 30]);
+}
+```
+
 ### 表達式 (Expressions)
 
 ```rs

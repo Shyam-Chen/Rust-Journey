@@ -320,6 +320,24 @@ fn main() {
 - 簡化 `Result<T, E>` 的條件處理
 - 避免使用過長的 `match` 語句
 
+## `let else`
+
+```rs
+fn print_name(name: Option<&str>) {
+    let Some(name) = name else {
+        println!("No name");
+        return;
+    };
+
+    println!("Hello, {name}!");
+}
+
+fn main() {
+    print_name(Some("Alice")); // Hello, Alice!
+    print_name(None); // No name
+}
+```
+
 ## `while let`
 
 ```rs
