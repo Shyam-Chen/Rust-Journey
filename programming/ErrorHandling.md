@@ -31,3 +31,49 @@ fn main() -> Result<()> {
 }
 // ❌ Error: x cannot be zero
 ```
+
+```rs
+use anyhow::{Context, Result};
+
+fn find_max(numbers: &[i32]) -> Result<&i32> {
+    numbers
+        .iter()
+        .max()
+        .context("無法尋找最大值：輸入陣列是空的")
+}
+
+fn main() -> Result<()> {
+    let numbers = [1, 7, 3, 9, 2];
+    let max = find_max(&numbers)?;
+    println!("最大值：{max}");
+    Ok(())
+}
+```
+
+當輸入陣列為空時，`max()` 會回傳 `None`。透過 `context()` 將 `None` 轉換成錯誤後，程式會回傳：
+
+```sh
+Error: 無法尋找最大值：輸入陣列是空的
+```
+
+因此不會因為呼叫 `unwrap()` 而直接觸發 `panic`。
+
+如果使用：
+
+```rs
+fn find_max(numbers: &[i32]) -> &i32 {
+    numbers.iter().max().unwrap()
+}
+
+fn main() {
+    let numbers = [1, 7, 3, 9, 2];
+    let max = find_max(&numbers);
+    println!("最大值：{max}");
+}
+```
+
+當陣列為空時，`unwrap()` 會嘗試從 `None` 取出值，並造成程式崩潰。`panic` 訊息如下：
+
+```sh
+called `Option::unwrap()` on a `None` value
+```

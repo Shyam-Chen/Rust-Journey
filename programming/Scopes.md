@@ -20,6 +20,33 @@ fn main() {
 }
 ```
 
+```rs
+fn main() {
+    let s1 = String::from("Hello, World!");
+    let s2 = s1; // s1 的所有權移動到 s2
+    // println!("{s1}"); // ❌
+    destroy_string(s2); // s2 的所有權移動到 destroy_string
+    // println!("{s2}"); // ❌
+}
+
+fn destroy_string(string: String) {
+    println!("{string}");
+    // 函式結束後，參數中的 String 被自動釋放
+}
+```
+
+對於實作 `Copy` 的型別，賦值時會直接複製值：
+
+```rs
+fn main() {
+    let a = 1;
+    let b = a; // 複製 a 的值，而不是移轉所有權
+    println!("{a}, {b}");
+}
+```
+
+常見的 [`Copy`](https://doc.rust-lang.org/std/marker/trait.Copy.html) 包括：整數、浮點數、布林值 (`bool`)、字元 (`char`)
+
 ### 借用 (Borrowing, 取引用)
 
 不可變借用 `&T`: 只能讀取，不能修改。
@@ -30,6 +57,20 @@ fn main() {
     let s2 = &s1; // 借用 s1 的所有權，而不是移動
     println!("{s1}, World!"); // s1 仍然有效
     println!("{s2}, World!"); // 使用借用的 s2
+}
+```
+
+```rs
+fn main() {
+    let s1 = String::from("Hello, World!");
+    let s2 = &s1; // 借用 s1，不取得所有權
+    println!("{s1}");
+    borrow_string(&s2);
+    println!("{s2}");
+}
+
+fn borrow_string(string: &str /* 借用字串內容 */) {
+    println!("{string}");
 }
 ```
 
