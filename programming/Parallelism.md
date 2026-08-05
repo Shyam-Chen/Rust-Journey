@@ -1,5 +1,26 @@
 # 並行 (Parallelism)
 
+並發 (Concurrency)：多個任務在時間上有所重疊，由系統進行管理與交錯執行；它們可以一起「發動」，但不一定在同一時刻真正執行。
+
+常見於：
+
+- 非同步 I/O
+- `async/await`
+- Event loop
+- 多執行緒 (Multithreading) 處理 I/O
+
+並行 (Parallelism)：多個任務在同一時間真正執行，也就是一起「進行」；通常需要多核心 CPU 或多台機器來支援。
+
+常見於：
+
+- 多核心運算
+- 多行程 (Multiprocessing)
+- GPU 計算
+- 平行矩陣運算
+- 大型資料分析
+
+## 執行緒
+
 ```rs
 use std::thread;
 
@@ -69,7 +90,7 @@ fn main() {
 }
 ```
 
-## 佇列 (Queue) 與 工作執行緒 (Worker) 模型
+## 佇列 (Queue) 與工作執行緒 (Worker) 模型
 
 生產者 (Producer) 與消費者 (Consumer) 模型
 
@@ -124,5 +145,32 @@ fn main() {
     for worker in workers {
         worker.join().unwrap();
     }
+}
+```
+
+## 啟動多個子行程
+
+```rs
+use std::process::Command;
+
+fn main() {
+    let mut children = Vec::new();
+
+    for i in 0..3 {
+        let child = Command::new("sh")
+            .arg("-c")
+            .arg(format!("echo 子行程 {i}; sleep 1"))
+            .spawn()
+            .expect("無法啟動子行程");
+
+        children.push(child);
+    }
+
+    for mut child in children {
+        let status = child.wait().expect("等待子行程失敗");
+        println!("子行程結束：{status}");
+    }
+
+    println!("所有子行程都完成了");
 }
 ```
