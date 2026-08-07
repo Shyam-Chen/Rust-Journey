@@ -77,3 +77,9 @@ fn main() {
 ```sh
 called `Option::unwrap()` on a `None` value
 ```
+
+## 定義結構化
+
+```sh
+$ cargo add thiserror
+```

@@ -23,15 +23,16 @@ fn main() {
 ```rs
 fn main() {
     let s1 = String::from("Hello, World!");
-    let s2 = s1; // s1 的所有權移動到 s2
+    let s2 = s1; // s1 的所有權已移動到 s2
     // println!("{s1}"); // ❌
-    destroy_string(s2); // s2 的所有權移動到 destroy_string
+    destroy_string(s2); // s2 的所有權已移動到 destroy_string 的參數 s
     // println!("{s2}"); // ❌
 }
 
-fn destroy_string(string: String) {
-    println!("{string}");
-    // 函式結束後，參數中的 String 被自動釋放
+fn destroy_string(s: String) {
+    println!("{s}");
+    // 函式結束時，s 離開作用域
+    // String 所擁有的堆積記憶體會被自動釋放
 }
 ```
 
