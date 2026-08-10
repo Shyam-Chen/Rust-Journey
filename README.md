@@ -146,3 +146,15 @@ Raspberry Pi
 
 Raspberry Pi Template<br>
 Raspberry Pi Pico Template
+
+```coffee
+Raspberry Pi 5
+├── MQTT Server：RMQTT (`rmqtt`)
+└── Application
+    ├── MQTT Client：RuMQTTc (`rumqttc`)
+    └── Raspberry Pi Touch Display 2
+
+Raspberry Pi Pico 2 W
+├── MQTT Client：Rust-MQTT (`rust-mqtt`)
+└── GPIO Handler
+```

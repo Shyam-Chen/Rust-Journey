@@ -78,6 +78,66 @@ fn main() {
 called `Option::unwrap()` on a `None` value
 ```
 
+### 透過 `?` 把錯誤往上傳遞
+
+```rs
+use chrono::NaiveDateTime;
+
+fn main() {
+    let input = "2024-7-7 0:0:0";
+
+    let date_time = NaiveDateTime::parse_from_str(input, "%Y-%m-%d %H:%M:%S")
+        .unwrap()
+        .and_utc();
+
+    println!("{date_time}");
+}
+```
+
+```diff
+- .unwrap()
++ .context("無法解析日期時間")?
+```
+
+```rs
+use anyhow::{Context, Result};
+use chrono::NaiveDateTime;
+
+fn main() -> Result<()> {
+    let input = "2024-7-7 0:0:0";
+
+    let date_time = NaiveDateTime::parse_from_str(input, "%Y-%m-%d %H:%M:%S")
+        .context("無法解析日期時間")?
+        .and_utc();
+
+    println!("{date_time}");
+
+    Ok(())
+}
+```
+
+```diff
+- .unwrap()
++ .with_context(|| format!("無法解析日期時間：`{input}`"))?
+```
+
+```rs
+use anyhow::{Context, Result};
+use chrono::NaiveDateTime;
+
+fn main() -> Result<()> {
+    let input = "2024-7-7 0:0:0";
+
+    let date_time = NaiveDateTime::parse_from_str(input, "%Y-%m-%d %H:%M:%S")
+        .with_context(|| format!("無法解析日期時間：`{input}`"))?
+        .and_utc();
+
+    println!("{date_time}");
+
+    Ok(())
+}
+```
+
 ## 定義結構化
 
 ```sh

@@ -31,7 +31,7 @@ fn main() {
 
 fn destroy_string(s: String) {
     println!("{s}");
-    // 函式結束時，s 離開作用域
+    // 函式結束時，s 離開範疇
     // String 所擁有的堆積記憶體會被自動釋放
 }
 ```
