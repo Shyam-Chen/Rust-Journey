@@ -96,7 +96,7 @@ Problems:
 | 2215. Find the Difference of Two Arrays  | [Solution][2215] | Easy   | [詳解][2215-explanation] |
 | 1207. Unique Number of Occurrences       | [Solution][1207] | Easy   | [詳解][1207-explanation] |
 | 1657. Determine if Two Strings Are Close | [Solution][1657] | Medium | [詳解][1657-explanation] |
-| 2352. Equal Row and Column Pairs         | Solution         | Medium | 詳解                     |
+| 2352. Equal Row and Column Pairs         | [Solution][2352] | Medium | 詳解                     |
 
 [2215]: ./src/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/find_difference.rs
 [2215-explanation]: ./src/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/README.md
@@ -104,14 +104,19 @@ Problems:
 [1207-explanation]: ./src/1207.%20Unique%20Number%20of%20Occurrences/README.md
 [1657]: ./src/1657.%20Determine%20if%20Two%20Strings%20Are%20Close/close_strings.rs
 [1657-explanation]: ./src/1657.%20Determine%20if%20Two%20Strings%20Are%20Close/README.md
+[2352]: ./src/2352.%20Equal%20Row%20and%20Column%20Pairs/equal_pairs.rs
 
 <a name="stack"></a>
 
-| Stack                              |          |        |      |
-| ---------------------------------- | -------- | ------ | ---- |
-| 2390. Removing Stars From a String | Solution | Medium | 詳解 |
-| 735. Asteroid Collision            | Solution | Medium | 詳解 |
-| 394. Decode String                 | Solution | Medium | 詳解 |
+| Stack                              |                  |        |      |
+| ---------------------------------- | ---------------- | ------ | ---- |
+| 2390. Removing Stars From a String | [Solution][2390] | Medium | 詳解 |
+| 735. Asteroid Collision            | [Solution][735]  | Medium | 詳解 |
+| 394. Decode String                 | [Solution][394]  | Medium | 詳解 |
+
+[2390]: ./src/2390.%20Removing%20Stars%20From%20a%20String/remove_stars.rs
+[735]: ./src/735.%20Asteroid%20Collision/asteroid_collision.rs
+[394]: ./src/394.%20Decode%20String/decode_string.rs
 
 <a name="queue"></a>
 
