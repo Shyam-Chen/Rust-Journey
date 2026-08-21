@@ -123,10 +123,12 @@ Problems:
 | Queue                       |                 |        |                         |
 | --------------------------- | --------------- | ------ | ----------------------- |
 | 933. Number of Recent Calls | [Solution][933] | Easy   | [詳解][933-explanation] |
-| 649. Dota2 Senate           | Solution        | Medium | 詳解                    |
+| 649. Dota2 Senate           | [Solution][649] | Medium | [詳解][649-explanation] |
 
 [933]: ./src/933.%20Number%20of%20Recent%20Calls/recent_counter.rs
 [933-explanation]: ./src/933.%20Number%20of%20Recent%20Calls/README.md
+[649]: ./src/649.%20Dota2%20Senate/predict_party_victory.rs
+[649-explanation]: ./src/649.%20Dota2%20Senate/README.md
 
 <a name="linked-list"></a>
 

@@ -45,6 +45,9 @@ mod _605_can_place_flowers;
 #[path = "./643. Maximum Average Subarray I/find_max_average.rs"]
 mod _643_find_max_average;
 
+#[path = "./649. Dota2 Senate/predict_party_victory.rs"]
+mod _649_predict_party_victory;
+
 #[path = "./724. Find Pivot Index/pivot_index.rs"]
 mod _724_pivot_index;
 
