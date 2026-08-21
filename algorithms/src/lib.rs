@@ -87,6 +87,9 @@ mod _1732_largest_altitude;
 #[path = "./1768. Merge Strings Alternately/merge_alternately.rs"]
 mod _1768_merge_alternately;
 
+#[path = "./2095. Delete the Middle Node of a Linked List/delete_middle.rs"]
+mod _2095_delete_middle;
+
 #[path = "./2215. Find the Difference of Two Arrays/find_difference.rs"]
 mod _2215_find_difference;
 
@@ -95,3 +98,5 @@ mod _2352_equal_pairs;
 
 #[path = "./2390. Removing Stars From a String/remove_stars.rs"]
 mod _2390_remove_stars;
+
+pub mod utils;

@@ -132,12 +132,15 @@ Problems:
 
 <a name="linked-list"></a>
 
-| Linked List                                   |          |        |      |
-| --------------------------------------------- | -------- | ------ | ---- |
-| 2095. Delete the Middle Node of a Linked List | Solution | Medium | 詳解 |
-| 328. Odd Even Linked List                     | Solution | Medium | 詳解 |
-| 206. Reverse Linked List                      | Solution | Easy   | 詳解 |
-| 2130. Maximum Twin Sum of a Linked List       | Solution | Medium | 詳解 |
+| Linked List                                   |                  |        |                          |
+| --------------------------------------------- | ---------------- | ------ | ------------------------ |
+| 2095. Delete the Middle Node of a Linked List | [Solution][2095] | Medium | [詳解][2095-explanation] |
+| 328. Odd Even Linked List                     | Solution         | Medium | 詳解                     |
+| 206. Reverse Linked List                      | Solution         | Easy   | 詳解                     |
+| 2130. Maximum Twin Sum of a Linked List       | Solution         | Medium | 詳解                     |
+
+[2095]: ./src/2095.%20Delete%20the%20Middle%20Node%20of%20a%20Linked%20List/delete_middle.rs
+[2095-explanation]: ./src/2095.%20Delete%20the%20Middle%20Node%20of%20a%20Linked%20List/README.md
 
 <a name="binary-tree---dfs"></a>
 
