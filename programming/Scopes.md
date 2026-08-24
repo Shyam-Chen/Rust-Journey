@@ -327,8 +327,16 @@ fn main() {
 ## 資源獲取即初始化 (RAII)
 
 ```rs
-{
-    let file = std::fs::File::open("data.txt").unwrap();
-    // 使用 file ...
-} // file 離開範疇，自動關閉文件
+use std::fs::File;
+use std::io::Result;
+
+fn main() -> Result<()> {
+    {
+        let file = File::open("./Cargo.toml")?; // 根據程式執行時的目前工作目錄去解析的
+        println!("檔案使用中：{file:?}");
+    } // file 在這裡被 Drop
+
+    println!("這裡檔案已關閉");
+    Ok(())
+}
 ```
