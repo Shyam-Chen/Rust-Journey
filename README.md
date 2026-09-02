@@ -1,13 +1,13 @@
 # Rust Journey
 
-🦀 從開源探索到專案實戰，記錄從懵懂到熟練的每一個里程碑 —— 命令列介面、圖形化介面、嵌入式系統
+🦀 從開源探索到專案實戰，記錄從懵懂到熟練的每一個里程碑 —— 嵌入式系統、終端機介面、圖形化介面
 
 1. [程式設計 (Programming)](#程式設計-programming)
 2. [演算法 (Algorithms)](#演算法-algorithms)
-3. [CLI 應用 (CLI Applications)](#cli-應用-cli-applications)
-4. [TUI 應用 (TUI Applications)](#tui-應用-tui-applications)
-5. [GUI 應用 (GUI Applications)](#gui-應用-gui-applications)
-6. [嵌入式應用 (Embedded Applications)](#嵌入式應用-embedded-applications)
+3. [命令列介面 (Command Line Interface)](#命令列介面-command-line-interface)
+4. [嵌入式應用 (Embedded Applications)](#嵌入式應用-embedded-applications)
+5. [終端機介面 (Terminal User Interface)](#終端機介面-terminal-user-interface)
+6. [圖形化介面 (Graphical User Interface)](#圖形化介面-graphical-user-interface)
 
 ---
 
@@ -83,7 +83,7 @@
 
 ---
 
-## CLI 應用 (CLI Applications)
+## 命令列介面 (Command Line Interface)
 
 Clap
 
@@ -100,22 +100,6 @@ Clap
   - Sheetplot CLI - Generates charts and visualizations directly from spreadsheet files
 
 Clap Template
-
----
-
-## TUI 應用 (TUI Applications)
-
-Ratatui
-
-- [應用程式 (Application)](./tui-applications/README.md)
-
----
-
-## GUI 應用 (GUI Applications)
-
-Egui
-
-- [應用程式 (Application)](./gui-applications/README.md)
 
 ---
 
@@ -159,3 +143,19 @@ Raspberry Pi Pico 2 W
 ├── MQTT Client：Rust-MQTT (`rust-mqtt`)
 └── GPIO Handler
 ```
+
+---
+
+## 終端機介面 (Terminal User Interface)
+
+Ratatui
+
+- [應用程式 (Application)](./tui-applications/README.md)
+
+---
+
+## 圖形化介面 (Graphical User Interface)
+
+Egui
+
+- [應用程式 (Application)](./gui-applications/README.md)
